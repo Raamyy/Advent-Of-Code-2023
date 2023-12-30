@@ -1,3 +1,3 @@
-﻿AdventProblem problem = new Day4();
+﻿AdventProblem problem = new Day4Part2();
 
 problem.Solve();
