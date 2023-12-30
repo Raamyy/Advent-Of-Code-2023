@@ -16,6 +16,6 @@ public abstract class AdventProblem(string inputPath)
         Solve(input);
     }
 
-    protected abstract void Solve(string input);
+    public abstract void Solve(string input);
     
 }

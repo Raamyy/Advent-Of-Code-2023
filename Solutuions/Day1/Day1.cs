@@ -1,11 +1,12 @@
-public class Day1(string inputPath) : AdventProblem(inputPath)
+public class Day1() : AdventProblem("Solutuions\\Day1\\input.txt")
 {
-    protected override void Solve(string input)
+    public override void Solve(string input)
     {
         int result = 0;
         var lines = input.Split("\n");
         foreach (var line in lines)
         {
+            if(string.IsNullOrEmpty(line)) continue;
             string num = "";
             for (int i = 0; i < line.Length; i++)
             {
@@ -24,7 +25,7 @@ public class Day1(string inputPath) : AdventProblem(inputPath)
                     break;
                 }
             }
-
+            
             result += int.Parse(num);
         }
         Console.WriteLine(result);
